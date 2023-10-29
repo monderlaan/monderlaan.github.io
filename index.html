@@ -3,9 +3,10 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="hero-title">
+	<div class="hero-title" id="hero-section">
 		<div class="title-wrapper">
 			<h1 style="color:white;">Roblox</h1> 
 			<h1 class="dev" style="color:#00adb5;">Developer</h1>
@@ -21,7 +22,7 @@
 	<img class="hero-doodles" src="./svg/doodles.svg"/>
 	<img class="roblox-hero-logo" src="./img/roblox-logo.png"/>
 
-	<hr class="hr1"/>
+	<hr class="hr1" id="about-me-section"/>
 
 	<div class="about-me">
 		<h1>About</h1>
@@ -80,13 +81,14 @@
 
 	<hr class="hr3"/>
 
-	<div class="contacts">
+	<div class="contacts" id="contacts">
 		<div>
 			<h1>Got a project in mind?</h1>
 			<h1 style="color:#00adb5;">Contact me!</h1>
 			<p>I’m interested in freelance opportunities. However,
 			if you have other request or question, don’t
-			hesitate to contact me!</p>
+			hesitate to contact me!<br>
+			My time zone is UTC+2</p>
 		</div>
 		<div class="contacts-box" style="margin-top:40px;">
 			<p><img src="./svg/DiscordLogo.svg" style="vertical-align:middle;">monderlaan</p>
@@ -105,12 +107,14 @@
 			<div class="header-item header-logo"><a>Monderlaan</a></div>
 		</div>
 		<div class="header-section">
-			<div class="header-item header-button"><a href="#">Home</a></div>
-			<div class="header-item header-button"><a href="#">About me</a></div>
-			<div class="header-item header-button"><a href="#">Contact</a></div>
+			<div class="header-item header-button">
+				<a href="#hero-section">Home</a></div>
+			<div class="header-item header-button">
+				<a href="#about-me-section">About me</a></div>
+			<div class="header-item header-button">
+				<a href="#contacts">Contact</a></div>
 		</div>
 
 	</div>
-
 </body>
 </html>
