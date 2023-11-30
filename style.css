@@ -42,6 +42,8 @@ a {
 
 .header-logo {
 	font-weight: 700;
+	position: absolute;
+	left: 10%;
 }
 
 .header-button a {
@@ -178,7 +180,7 @@ a {
 }
 
 .my-works {
-	margin-top: 15%;
+	margin-top: 140px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	position: absolute;
@@ -278,7 +280,6 @@ a {
 	border-color: #373c44;
 }
 
-
 @media (max-width: 1592px) {
 	.hero-doodles {
 		display:none;
@@ -321,6 +322,6 @@ a {
 	}
 	
 	.my-works {
-		margin-top: 300px;
+		margin-top: 140px;
 	}
 }
