@@ -62,7 +62,7 @@ a {
 }
 
 .hero-title {
-	/*position: absolute;*/
+	position: absolute;
 	padding-left: 13%;
 	padding-top: 18%;
 	font-size: 360%;
@@ -93,9 +93,10 @@ a {
 }
 
 .hero-arrow {
-	position: absolute;
-	left: 9%;
-	top: 41%;
+	position: relative;
+	right: 19%;
+	top: -240px;
+	width: 10%;
 }
 
 .hero-doodles {
@@ -303,6 +304,43 @@ a {
 	.header-item {
 		padding: 50px 10px;
 		font-size: 14px;
+	}
+
+	.hr1 {
+		border-style: none none solid none;
+		position: absolute;
+		left: 0px;
+		top: 800px;
+		width: 100%;
+		border-color: #373c44;
+	}
+	
+	.about-me {
+		position: absolute;
+		top: 1000px;
+		left: 15%;
+		color: white;
+	}
+	
+	.about-me-text {
+		width: 60%;
+		position: absolute;
+		top: 1050px;
+		left: 15%;
+	}
+
+	.skills div {
+		margin-right: 50%;
+	}
+
+	.my-works {
+		position: absolute;
+		left: 15%;
+	}
+
+	.contacts {
+		position: absolute;
+		left: 15%;
 	}
 }
 

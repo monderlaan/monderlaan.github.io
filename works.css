@@ -71,9 +71,9 @@ a {
 }
 
 .works div {
+	width: 402px;
 	padding: 4px;
-	margin: 6%;
-	margin-bottom: 10%;
+	margin: 10px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #00adb5;
@@ -87,12 +87,11 @@ a {
 }
 
 .works {
-	width: 300px;
-	display: inline-flex;
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
 	margin-top: 200px;
-	/*position: absolute;
-	top: 320%;
-	left: 20%;*/
 }
 
 @media (max-width: 860px) {
