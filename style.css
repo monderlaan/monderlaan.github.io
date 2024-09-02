@@ -64,7 +64,7 @@ a {
 .hero-title {
 	position: absolute;
 	padding-left: 13%;
-	padding-top: 18%;
+	top: 320px;
 	font-size: 360%;
 }
 
@@ -134,27 +134,28 @@ a {
 .about-me {
 	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
-	display: flex;
 	position: absolute;
-	top: 1200px;
+	top: 1000px;
 	left: 10%;
 	color: white;
+}
+
+.about-me h1 {
+	display: flex;
 }
 
 .about-me-text {
 	color: rgba(238, 238, 238, 0.75);
 	font-size: 20px;
 	margin-top: 5%;
-	width: 40%;
-	position: absolute;
-	top: 1250px;
-	left: 10%;
+	width: 700px;
 }
 
 .skills {
 	display: flex;
 	position: absolute;
-	top: 500px;
+	top: 550px;
+	margin-right: 5%;
 }
 
 .skills p {
@@ -174,18 +175,16 @@ a {
 }
 
 .about-me-doodles {
-	margin-top: -10%;
 	position: absolute;
-	right: 10%;
-	top: 1500px;
+	right: 6%;
+	top: 1200px;
 }
 
 .my-works {
-	margin-top: 140px;
 	font-family: 'Poppins', sans-serif;
 	font-size: 30px;
 	position: absolute;
-	top: 1900px;
+	top: 2000px;
 	left: 10%;
 	color: white;
 }
@@ -196,12 +195,12 @@ a {
 	padding: 0%;
 }
 
-.works a {
+.my-works a {
 	color: #00adb5;
 	transition: background-color ease .25s, color ease .25s;
 }
 
-.works a:hover {
+.my-works a:hover {
 	color: #222831;
 	background-color: #00adb5;
 }
@@ -209,6 +208,7 @@ a {
 .works div {
 	padding: 4px;
 	margin-bottom: 10%;
+	width: 400px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #00adb5;
@@ -222,7 +222,7 @@ a {
 }
 
 .works {
-	width: 300px;
+	width: 400px;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 100px;
@@ -232,9 +232,11 @@ a {
 }
 
 .works-doodles {
+	height: 900px;
+	width: 900px;
 	position: absolute;
-	right: 10%;
-	top: 2300px
+	right: 6%;
+	top: 2200px
 }
 
 
@@ -242,7 +244,7 @@ a {
 	border-style: none none solid none;
 	position: absolute;
 	left: 0px;
-	top: 3350px;
+	top: 3300px;
 	width: 100%;
 	border-color: #373c44;
 }
@@ -250,7 +252,7 @@ a {
 .contacts {
 	justify-content: space-between;
 	position: absolute;
-	top: 3350px;
+	top: 3300px;
 	font-size: 30px;
 	left: 10%;
 	color: white;
@@ -276,16 +278,13 @@ a {
 	border-style: none none solid none;
 	position: absolute;
 	left: 0px;
-	top: 4205px;
+	top: 4150px;
 	width: 100%;
 	border-color: #373c44;
 }
 
 @media (max-width: 1592px) {
 	.hero-doodles {
-		display:none;
-	}
-	.hero-arrow {
 		display:none;
 	}
 	.roblox-hero-logo {
@@ -306,44 +305,44 @@ a {
 		font-size: 14px;
 	}
 
-	.hr1 {
-		border-style: none none solid none;
-		position: absolute;
-		left: 0px;
-		top: 800px;
-		width: 100%;
-		border-color: #373c44;
-	}
-	
 	.about-me {
 		position: absolute;
 		top: 1000px;
-		left: 15%;
 		color: white;
-	}
-	
-	.about-me-text {
-		width: 60%;
-		position: absolute;
-		top: 1050px;
-		left: 15%;
 	}
 
 	.skills div {
-		margin-right: 50%;
+		margin-right: 5%;
 	}
 
-	.my-works {
+	.works {
+		width: 842px;
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: 100px;
+	}
+
+	.works div {
+		margin-right: 5px;
+		height: 600px;
+		width : 400px;
+	}
+
+	.hr3 {
 		position: absolute;
-		left: 15%;
+		top: 3000px
 	}
 
 	.contacts {
-		position: absolute;
-		left: 15%;
+		position absolute;
+		top: 3000px;
+	}
+
+	.hr4 {
+		position absolute;
+		top: 4000px;
 	}
 }
-
 @media (max-width: 860px) {
 	.hero-title {
 		font-size: 40px;
