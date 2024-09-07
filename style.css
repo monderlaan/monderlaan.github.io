@@ -63,7 +63,7 @@ a {
 
 .hero-title {
 	position: absolute;
-	padding-left: 13%;
+	left: 10%;
 	top: 320px;
 	font-size: 360%;
 }
@@ -94,23 +94,24 @@ a {
 
 .hero-arrow {
 	position: relative;
-	right: 19%;
+	right: 14%;
 	top: -240px;
 	width: 10%;
 }
 
 .hero-doodles {
 	position: absolute;
-	right: 10%;
-	top: 250px;
+	right: calc(6% - 40px);
+	top: 170px;
+	width: 734px;
 }
 
 .roblox-hero-logo {
 	position: absolute;
-	right: 10%;
-	top: 250px;
-	width: 500px;
-	height: 500px;
+	right: calc(6% - 40px);
+	top: 170px;
+	width: 734px;
+	height: 734px;
 }
 
 .hr1 {
@@ -175,6 +176,7 @@ a {
 }
 
 .about-me-doodles {
+	height: 550px;
 	position: absolute;
 	right: 6%;
 	top: 1200px;
@@ -195,19 +197,42 @@ a {
 	padding: 0%;
 }
 
-.my-works a {
+.works-arrow {
+	position: absolute;
+	top: 3110px;
+	left: calc(10% - 150px);
+}
+
+.my-works-a {
+	position: absolute;
+	top: 3250px;
+	left: 10%;
 	color: #00adb5;
 	transition: background-color ease .25s, color ease .25s;
 }
 
-.my-works a:hover {
+.my-works-a:hover {
 	color: #222831;
 	background-color: #00adb5;
 }
 
+.works a {
+	left: 10%;
+	color: #00adb5;
+	transition: background-color ease .25s, color ease .25s;
+}
+
+.works a:hover {
+	color: #222831;
+	background-color: #00adb5;
+}
+
+
 .works div {
 	padding: 4px;
 	margin-bottom: 10%;
+	margin-right: auto;
+	margin-left: 0px;
 	width: 400px;
 	border-style: solid;
 	border-width: 1px;
@@ -222,21 +247,24 @@ a {
 }
 
 .works {
-	width: 400px;
+	width: 33%;
+	max-width: 1000px;
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 100px;
-	/*position: absolute;
-	top: 320%;
-	left: 20%;*/
+
+	position: absolute;
+	top: 2100px;
+	left: 10%;
 }
 
 .works-doodles {
-	height: 900px;
-	width: 900px;
+	z-index: -3;
+	height: 1300px;
+	width: 100%;
+	left: 0px;
 	position: absolute;
-	right: 6%;
-	top: 2200px
+	top: 2000px;
 }
 
 
@@ -283,7 +311,7 @@ a {
 	border-color: #373c44;
 }
 
-@media (max-width: 1592px) {
+@media (max-width: 1652px) {
 	.hero-doodles {
 		display:none;
 	}
@@ -294,7 +322,9 @@ a {
 		display:none;
 	}
 	.works-doodles {
-		display:none;
+		height: 1000px;
+		position: absolute;
+		top: 2000px;
 	}
 	.header {
 		justify-content:none;
@@ -315,15 +345,37 @@ a {
 		margin-right: 5%;
 	}
 
+	.works-arrow {
+		position: absolute;
+		top: 2750px;
+		left: calc(10% - 150px);
+	}
+
+	.my-works-a {
+		position: absolute;
+		top: 2900px;
+		left: 10%;
+		color: #00adb5;
+		transition: background-color ease .25s, color ease .25s;
+	}
+
+	.my-works-a:hover {
+		color: #222831;
+		background-color: #00adb5;
+	}
+
 	.works {
-		width: 842px;
+		max-width: none;
+		width: 100%;
+		left: 0;
 		display: flex;
 		flex-wrap: wrap;
 		margin-top: 100px;
 	}
 
 	.works div {
-		margin-right: 5px;
+		margin-right: auto;
+		margin-left: auto;
 		height: 600px;
 		width : 400px;
 	}
