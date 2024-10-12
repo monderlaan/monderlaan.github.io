@@ -1,9 +1,8 @@
 * {margin: 0; padding:0;}
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
 	background-color: #222831;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
 	color: white;
 }
 
@@ -35,7 +34,7 @@ a {
 
 .header-item {
 	display: inline-grid;
-	padding: 50px 24px;
+	padding: 20px 24px;
 	font-size: 18px;
 	font-weight: 400;
 }
@@ -58,6 +57,16 @@ a {
 	height: 250px;
 	width: 400px;
 	padding: 0%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #00adb5;
+}
+
+.works iframe {
+	padding: 0%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #00adb5;
 }
 
 .works a {
@@ -72,12 +81,12 @@ a {
 
 .works div {
 	width: 402px;
-	padding: 4px;
+	padding: 0px;
 	margin: 10px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #00adb5;
-	background-color: rgba(57, 62, 70, 0.50);
+	background-color: rgba(26, 27, 38, 0.90);
 }
 
 .works p {

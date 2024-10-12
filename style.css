@@ -3,7 +3,7 @@
 
 body {
 	background-color: #222831;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Inconsolata', sans-serif;
 	color: white;
 }
 
@@ -35,7 +35,7 @@ a {
 
 .header-item {
 	display: inline-grid;
-	padding: 50px 24px;
+	padding: 20px 24px;
 	font-size: 18px;
 	font-weight: 400;
 }
@@ -61,10 +61,22 @@ a {
 	backdrop-filter: blur(10px);
 }
 
+.hero-wrapper {
+	position: static;
+	margin-top: 80px;
+
+	height: auto;
+	width: calc(100% - 2px);
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #373c44;
+}
+
 .hero-title {
-	position: absolute;
-	left: 10%;
-	top: 320px;
+	position: inherit;
+	margin-left: 100px;
+	margin-top: 200px;
 	font-size: 360%;
 }
 
@@ -94,50 +106,34 @@ a {
 
 .hero-arrow {
 	position: relative;
-	right: 14%;
+	right: 90px;
 	top: -240px;
 	width: 10%;
 }
 
-.hero-doodles {
-	position: absolute;
-	right: calc(6% - 40px);
-	top: 170px;
-	width: 734px;
-}
-
 .roblox-hero-logo {
 	position: absolute;
-	right: calc(6% - 40px);
-	top: 170px;
+	right: 0px;
+	top: 100px;
 	width: 734px;
-	height: 734px;
 }
 
-.hr1 {
-	border-style: none none solid none;
-	position: absolute;
-	left: 0px;
-	top: 1000px;
-	width: 100%;
-	border-color: #373c44;
-}
+.about-me-wrapper {
+	position: static;
+	/*top: 1000px;*/
 
-.hr2 {
-	border-style: none none solid none;
-	position: absolute;
-	left: 0px;
-	top: 2000px;
-	width: 100%;
+	height: fit;
+	width: calc(100% - 2px);
+
+	border-style: solid;
+	border-width: 1px;
 	border-color: #373c44;
 }
 
 .about-me {
-	font-family: 'Poppins', sans-serif;
+	margin-top: 50px;
+	margin-left: 50px;
 	font-size: 30px;
-	position: absolute;
-	top: 1000px;
-	left: 10%;
 	color: white;
 }
 
@@ -154,9 +150,9 @@ a {
 
 .skills {
 	display: flex;
-	position: absolute;
-	top: 550px;
 	margin-right: 5%;
+	margin-top: 300px;
+	margin-bottom: 100px;
 }
 
 .skills p {
@@ -176,18 +172,15 @@ a {
 }
 
 .about-me-doodles {
-	height: 550px;
 	position: absolute;
-	right: 6%;
-	top: 1200px;
+	top: 1000px;
+	height: 550px;
+	left: calc(100% - 750px);
 }
 
 .my-works {
-	font-family: 'Poppins', sans-serif;
-	font-size: 30px;
-	position: absolute;
-	top: 2000px;
-	left: 10%;
+	margin-left: 5%;
+	margin-top: 5%;
 	color: white;
 }
 
@@ -195,18 +188,19 @@ a {
 	height: 250px;
 	width: 400px;
 	padding: 0%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #00adb5;
 }
 
-.works-arrow {
-	position: absolute;
-	top: 3110px;
-	left: calc(10% - 150px);
+.works iframe {
+	padding: 0%;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #00adb5;
 }
 
 .my-works-a {
-	position: absolute;
-	top: 3250px;
-	left: 10%;
 	color: #00adb5;
 	transition: background-color ease .25s, color ease .25s;
 }
@@ -214,6 +208,20 @@ a {
 .my-works-a:hover {
 	color: #222831;
 	background-color: #00adb5;
+}
+
+.works-wrapper {
+	/*position: absolute;
+	top: 2006px;*/
+
+	background: url(./svg/about-me-doodles.svg);
+
+	width: calc(100% - 2px);
+	height: auto;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #373c44;
 }
 
 .works a {
@@ -229,15 +237,15 @@ a {
 
 
 .works div {
-	padding: 4px;
+	padding-right: 2px;
 	margin-bottom: 10%;
-	margin-right: auto;
+	margin-right: 60px;
 	margin-left: 0px;
 	width: 400px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: #00adb5;
-	background-color: rgba(57, 62, 70, 0.50);
+	background-color: rgba(26, 27, 38, 0.90);
 }
 
 .works p {
@@ -247,42 +255,53 @@ a {
 }
 
 .works {
-	width: 33%;
-	max-width: 1000px;
+	margin-left: 5%;
+	width: 80%;
 	display: flex;
+
 	flex-wrap: wrap;
 	margin-top: 100px;
 
-	position: absolute;
-	top: 2100px;
-	left: 10%;
 }
 
-.works-doodles {
-	z-index: -3;
-	height: 1300px;
-	width: 100%;
-	left: 0px;
-	position: absolute;
-	top: 2000px;
+.more-button a {
+	font-weight: 700;
+	font-size: 20px;
+	border-radius: 30px;
+	padding:14px;
+	background-color:#00adb5;
+	color:#FFFFFF;
+	transition: box-shadow ease 0.5s;
 }
 
+.more-button a:hover {
+	box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+}
 
-.hr3 {
-	border-style: none none solid none;
-	position: absolute;
-	left: 0px;
-	top: 3300px;
-	width: 100%;
+.more-button {
+	margin-top: 30px;
+	margin-left: 60px;
+	margin-bottom: 50px;
+}
+
+.contacts-wrapper {
+	position: static;
+
+	height: fit;
+	width: calc(100% - 2px);
+
+	border-style: solid;
+	border-width: 1px;
 	border-color: #373c44;
 }
 
 .contacts {
 	justify-content: space-between;
-	position: absolute;
-	top: 3300px;
+	/*position: absolute;*/
 	font-size: 30px;
-	left: 10%;
+	margin-top: 10%;
+	margin-bottom: 35%;
+	margin-left: 5%;
 	color: white;
 }
 
@@ -311,106 +330,14 @@ a {
 	border-color: #373c44;
 }
 
-@media (max-width: 1652px) {
-	.hero-doodles {
-		display:none;
-	}
-	.roblox-hero-logo {
-		display:none;
-	}
+@media (max-width: 1500px) {
 	.about-me-doodles {
-		display:none;
-	}
-	.works-doodles {
-		height: 1000px;
-		position: absolute;
-		top: 2000px;
-	}
-	.header {
-		justify-content:none;
-		padding: 3px;
-	}
-	.header-item {
-		padding: 50px 10px;
-		font-size: 14px;
-	}
-
-	.about-me {
-		position: absolute;
-		top: 1000px;
-		color: white;
-	}
-
-	.skills div {
-		margin-right: 5%;
-	}
-
-	.works-arrow {
-		position: absolute;
-		top: 2750px;
-		left: calc(10% - 150px);
-	}
-
-	.my-works-a {
-		position: absolute;
-		top: 2900px;
-		left: 10%;
-		color: #00adb5;
-		transition: background-color ease .25s, color ease .25s;
-	}
-
-	.my-works-a:hover {
-		color: #222831;
-		background-color: #00adb5;
-	}
-
-	.works {
-		max-width: none;
-		width: 100%;
-		left: 0;
-		display: flex;
-		flex-wrap: wrap;
-		margin-top: 100px;
-	}
-
-	.works div {
-		margin-right: auto;
-		margin-left: auto;
-		height: 600px;
-		width : 400px;
-	}
-
-	.hr3 {
-		position: absolute;
-		top: 3000px
-	}
-
-	.contacts {
-		position absolute;
-		top: 3000px;
-	}
-
-	.hr4 {
-		position absolute;
-		top: 4000px;
+		display: none;
 	}
 }
-@media (max-width: 860px) {
-	.hero-title {
-		font-size: 40px;
-		margin-top: 100px;
-	}
-	.about-me-text {
-		margin-top: 100px;
-		width: 470px;
-	}
 
-	.skills div {
-		margin-top: 100px;
-		margin-right: 10px;
-	}
-	
-	.my-works {
-		margin-top: 140px;
+@media (max-width: 1300px) {
+	.roblox-hero-logo {
+		display: none;
 	}
 }
